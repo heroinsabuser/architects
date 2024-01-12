@@ -1,0 +1,28 @@
+.myinput {
+  width: 391px;
+  height: 46px;
+  border: 0;
+  background: #f3f3f3;
+  padding-left: 21px;
+  outline: 0;
+}
+
+.myinput{
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.myinput::placeholder {
+  color: #8d8d8d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+

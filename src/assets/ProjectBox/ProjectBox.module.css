@@ -1,0 +1,43 @@
+.projectbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  top: 48px;
+  left: 20px;
+  display: none;
+  flex-direction: column;
+}
+
+.content_text {
+  color: #fff;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.content_textdown {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-top: 14px;
+  display: inline-flex;
+}
+
+.projectbox:hover img {
+  filter: brightness(30%);
+  transition: 0.5s;
+}
+
+.projectbox:hover .content {
+  display: flex;
+  transition: 0.5s;
+}

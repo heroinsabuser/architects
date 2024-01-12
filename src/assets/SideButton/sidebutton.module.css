@@ -1,0 +1,12 @@
+.sidebutton{
+    width: 53px;
+    height: 53px;
+    border: 1px solid #F2F2F2; 
+    background:#fff; 
+    cursor: pointer;
+    margin-right: 23px;
+}
+
+.sidebutton:hover{
+    background:#F9F9F9; 
+}

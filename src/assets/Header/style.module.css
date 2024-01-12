@@ -1,0 +1,17 @@
+header{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 102px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 330px;
+}
