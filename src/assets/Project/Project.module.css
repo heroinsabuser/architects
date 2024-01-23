@@ -1,0 +1,32 @@
+.project {
+  width: 100%;
+  background: var(--1, #fbfbfb);
+  display: inline-flex;
+}
+
+.content {
+  padding: 30px;
+}
+
+h3 {
+  color: var(--Gray-4, #bdbdbd);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.text {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  width: 400px;
+  display: block;
+  margin-top: 73px;
+}
+
+.button{
+    margin-top: 64px;
+}

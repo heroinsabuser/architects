@@ -1,16 +1,24 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./assets/Layout/Layout";
-import Mainpage from "./assets/Pages/mainpage";
-import PhotoGallery from "./assets/Pages/PhotoGallery";
+import Mainpage from "./assets/Pages/MainPage/mainpage";
+import PhotoGallery from "./assets/Pages/GalleryPage/PhotoGallery";
+import Projects from "./assets/Pages/ProjectsPage/Projects";
+import ProjectPage from "./assets/Pages/ProjectsPage/Projects/ProjectPage";
+import Certifications from "./assets/Pages/CertificationsPage/Certifications";
+import ScrollToTop from "./assets/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Mainpage />} />
-          <Route path="/gallery" element={<PhotoGallery/>}/>
+          <Route path="gallery" element={<PhotoGallery/>}/>
+          <Route path='projects' element={<Projects/>}/>
+          <Route path='projects/project1' element={<ProjectPage/>}/>
+          <Route path='certifications' element={<Certifications/>}/>
         </Route>
       </Routes>
     </div>

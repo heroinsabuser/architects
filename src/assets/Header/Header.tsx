@@ -11,9 +11,9 @@ const Header = () => {
           <Icon />
           <div className={styles.nav}>
             <NavButton><Link to='/'>MAIN</Link></NavButton>
-            <NavButton><Link to='/gallery'>GALLERY</Link></NavButton>
-            <NavButton>PROJECTS</NavButton>
-            <NavButton>CERTIFICATIONS</NavButton>
+            <NavButton><Link to='gallery'>GALLERY</Link></NavButton>
+            <NavButton><Link to='projects'>PROJECTS</Link></NavButton>
+            <NavButton><Link to='certifications'>CERTIFICATIONS</Link></NavButton>
             <NavButton>Contacts</NavButton>
           </div>
         </div>

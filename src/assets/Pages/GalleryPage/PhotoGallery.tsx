@@ -1,8 +1,8 @@
 import style from "./PhotoGallery.module.css";
-import Photo from "../Photo/Photo";
-import Sidebutton from "../SideButton/sidebutton";
-import Lefticon from "../Icons/lefticon";
-import Righticon from "../Icons/righticon";
+import Photo from "../../Photo/Photo";
+import Sidebutton from "../../SideButton/sidebutton";
+import Lefticon from "../../Icons/lefticon";
+import Righticon from "../../Icons/righticon";
 
 const PhotoGallery = () => {
   return (
