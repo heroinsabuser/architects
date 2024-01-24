@@ -1,4 +1,5 @@
 import style from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,11 +11,11 @@ const Footer = () => {
           </div>
           <div className={style.info}>
             <h3 className={style.h3text}>Information</h3>
-            <span className={style.spantext}>Main</span>
-            <span className={style.spantext}>Gallery</span>
-            <span className={style.spantext}>Projects</span>
-            <span className={style.spantext}>Certifications</span>
-            <span className={style.spantext}>Contacts</span>
+            <Link style={{marginBottom: "16px"}} to='/'><span className={style.spantext}>Main</span></Link>
+            <Link style={{marginBottom: "16px"}} to='gallery'><span className={style.spantext}>Gallery</span></Link>
+            <Link style={{marginBottom: "16px"}} to='projects'><span className={style.spantext}>Projects</span></Link>
+            <Link style={{marginBottom: "16px"}} to='certifications'><span className={style.spantext}>Certifications</span></Link>
+            <Link to='contacts'><span className={style.spantext}>Contacts</span></Link>
           </div>
           <div className={style.info}>
             <h3 className={style.h3text}>Contacts</h3>
@@ -48,10 +49,10 @@ const Footer = () => {
           <div className={style.info}>
             <h3 className={style.h3text}>Social Media</h3>
             <div className={style.mediaicons}>
-              <img src="./facebook.svg" alt="" />
-              <img src="./twitter.svg" alt="" />
-              <img src="./Linked In.svg" alt="" />
-              <img src="./pininterest.svg" alt="" />
+              <img style={{cursor:'pointer'}} src="./facebook.svg" alt="" />
+              <img style={{cursor:'pointer'}}  src="./twitter.svg" alt="" />
+              <img style={{cursor:'pointer'}}  src="./Linked In.svg" alt="" />
+              <img style={{cursor:'pointer'}}  src="./pininterest.svg" alt="" />
             </div>
           </div>
         </div>

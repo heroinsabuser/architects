@@ -1,7 +1,7 @@
-import Lefticon from "../Icons/lefticon";
-import Righticon from "../Icons/righticon";
-import Sidebutton from "../SideButton/sidebutton";
-import SlideButton from "../SlideButton/SlideButton";
+import Lefticon from "../../../../Icons/lefticon";
+import Righticon from "../../../../Icons/righticon";
+import Sidebutton from "../../../../SideButton/sidebutton";
+import SlideButton from "../../../../SlideButton/SlideButton";
 import { useState } from "react";
 import style from "./MainSection.module.css";
 

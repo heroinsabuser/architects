@@ -1,7 +1,7 @@
-import Righticon from "../Icons/righticon";
-import Input from "../Input/Input";
-import PhoneInput from "../Input/PhoneInput";
-import SlideButton from "../SlideButton/SlideButton";
+import Righticon from "../../../../Icons/righticon";
+import Input from "../../../../Input/Input";
+import PhoneInput from "../../../../Input/PhoneInput";
+import SlideButton from "../../../../SlideButton/SlideButton";
 import style from './FormSection.module.css'
 
 const FormSection = () => {

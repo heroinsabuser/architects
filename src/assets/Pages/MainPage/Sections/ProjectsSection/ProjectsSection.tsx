@@ -1,6 +1,6 @@
-import Righticon from '../Icons/righticon';
-import ProjectBox from '../ProjectBox/ProjectBox';
-import SlideButton from '../SlideButton/SlideButton';
+import Righticon from '../../../../Icons/righticon';
+import ProjectBox from '../../../../ProjectBox/ProjectBox';
+import SlideButton from '../../../../SlideButton/SlideButton';
 import style from './ProjectsSection.module.css'
 
 const ProjectsSection = () => {

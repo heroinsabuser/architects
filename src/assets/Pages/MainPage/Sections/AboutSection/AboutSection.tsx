@@ -1,4 +1,4 @@
-import SlideButton from "../SlideButton/SlideButton";
+import SlideButton from "../../../../SlideButton/SlideButton";
 import style from "./AboutSection.module.css";
 
 const AboutSection = () => {

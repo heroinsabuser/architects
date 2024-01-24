@@ -7,6 +7,7 @@ import Projects from "./assets/Pages/ProjectsPage/Projects";
 import ProjectPage from "./assets/Pages/ProjectsPage/Projects/ProjectPage";
 import Certifications from "./assets/Pages/CertificationsPage/Certifications";
 import ScrollToTop from "./assets/ScrollToTop/ScrollToTop";
+import Contacts from "./assets/Pages/Contacts/Contacts";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='projects' element={<Projects/>}/>
           <Route path='projects/project1' element={<ProjectPage/>}/>
           <Route path='certifications' element={<Certifications/>}/>
+          <Route path="contacts" element={<Contacts/>}/>
         </Route>
       </Routes>
     </div>

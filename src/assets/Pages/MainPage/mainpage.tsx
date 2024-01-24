@@ -1,8 +1,8 @@
-import MainSection from "../../MainSection/MainSection";
-import AboutSection from "../../AboutSection/AboutSection";
-import FocusSection from "../../FocusSection/FocusSection";
-import ProjectsSection from "../../ProjectsSection/ProjectsSection";
-import FormSection from "../../FormSection/FormSection";
+import MainSection from "./Sections/MainSection/MainSection";
+import AboutSection from "./Sections/AboutSection/AboutSection";
+import FocusSection from "./Sections/FocusSection/FocusSection";
+import ProjectsSection from "./Sections/ProjectsSection/ProjectsSection";
+import FormSection from "./Sections/FormSection/FormSection";
 
 const Mainpage = () => {
   return (
