@@ -1,0 +1,113 @@
+.window {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.content {
+  padding: 28px 39px;
+  background: white;
+  opacity: 1;
+  position: relative;
+  transform: scale(0.5);
+  transition: 0.5s all;
+  border-radius: 5px;
+}
+
+.contentactive {
+  composes: content;
+  transform: scale(1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.title {
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titletext {
+  color: #333;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.84px;
+}
+
+.cancel {
+  position: absolute;
+  top: 32px;
+  right: 39px;
+}
+
+.button {
+  width: 391px;
+  height: 42px;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+.input {
+  width: 391px;
+  height: 46px;
+  border: 0;
+  background: #f3f3f3;
+  padding-left: 21px;
+  outline: 0;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.input::placeholder {
+  color: #8d8d8d;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.inputlarge {
+  height: 147px;
+  composes: input;
+}
+
+.label {
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.windowclose {
+  opacity: 1;
+}

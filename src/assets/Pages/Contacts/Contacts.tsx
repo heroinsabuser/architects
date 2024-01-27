@@ -1,7 +1,10 @@
+import { useState } from "react";
+import ContactWindow from "../../ContactWindow/ContactWindow";
 import SlideButton from "../../SlideButton/SlideButton";
 import style from "./Contacts.module.css";
 
 const Contacts = () => {
+  const [isOpenWindow, setOpenWindow] = useState(false)
   return (
     <div className={style.contacts}>
       <div className={style.content}>
@@ -22,7 +25,7 @@ const Contacts = () => {
           <span className={style.address}>sampleemail@gmail.com</span>
         </div>
         <div>
-          <SlideButton black>Contact Us</SlideButton>
+          <SlideButton onClick={()=>setOpenWindow(true)} black>Contact Us</SlideButton>
         </div>
       </div>
       <div className={style.map}>
@@ -35,6 +38,8 @@ const Contacts = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+      <div></div>
+      <ContactWindow active={isOpenWindow} setActive={setOpenWindow} />
     </div>
   );
 };
