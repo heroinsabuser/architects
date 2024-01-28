@@ -1,1 +1,1 @@
-React + TypeScript + React Router project
+<h1>React + TypeScript + React Router + react-hook-form SPA project<h1/>
