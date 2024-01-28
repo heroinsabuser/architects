@@ -18,7 +18,7 @@ const ContactWindow = ({ active, setActive }: any) => {
   };
 
   return (
-    <div className={active ? style.window : style.windowclose}>
+    <div className={active ? style.windowactive : style.window}>
       <div className={active ? style.contentactive : style.content}>
         <div className={style.title}>
           <span className={style.titletext}>Ask a question</span>
@@ -34,7 +34,7 @@ const ContactWindow = ({ active, setActive }: any) => {
             placeholder="Name"
           />
           <div className={style.error}>
-            {errors?.name && <p>{errors?.name?.message}</p>}
+            {errors?.name && <p>{errors?.name?.message?.toString()}</p>}
           </div>
           <input
             {...register("phone", {
@@ -52,7 +52,7 @@ const ContactWindow = ({ active, setActive }: any) => {
             placeholder="Phone Number"
           />
           <div className={style.error}>
-            {errors?.phone && <p>{errors?.phone?.message}</p>}
+            {errors?.phone && <p>{errors?.phone?.message?.toString()}</p>}
           </div>
           <input
             {...register("mail", { required: "Required!" })}
@@ -60,7 +60,7 @@ const ContactWindow = ({ active, setActive }: any) => {
             placeholder="E-mail"
           />
           <div className={style.error}>
-            {errors?.mail && <p>{errors?.mail?.message}</p>}
+            {errors?.mail && <p>{errors?.mail?.message?.toString()}</p>}
           </div>
           <input className={style.input} placeholder="Interested In" />
           <div></div>
@@ -70,13 +70,20 @@ const ContactWindow = ({ active, setActive }: any) => {
             placeholder="Message"
           />
           <div className={style.error}>
-            {errors?.large && <p>{errors?.large?.message}</p>}
+            {errors?.large && <p>{errors?.large?.message?.toString()}</p>}
           </div>
           <div>
-            <input type="checkbox" name="check" />
+            <input
+              {...register("check", { required: "Required!" })}
+              type="checkbox"
+              name="check"
+            />
             <label className={style.label} htmlFor="check">
               By submitting an application you agree to the policy <br></br>
-              confidentiality
+              confidentiality{" "}
+              <div className={style.error}>
+                {errors?.check && <p>{errors?.check?.message?.toString()}</p>}
+              </div>
             </label>
           </div>
           <button className={style.button} type="submit">

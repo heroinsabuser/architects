@@ -4,6 +4,7 @@ import Sidebutton from "../../../../SideButton/sidebutton";
 import SlideButton from "../../../../SlideButton/SlideButton";
 import { useState } from "react";
 import style from "./MainSection.module.css";
+import { Link } from "react-router-dom";
 
 interface ISlides {
   id: number;
@@ -55,7 +56,7 @@ const MainSection = () => {
               className={style.slider_image}
             />
             <div className={style.slide_button}>
-              <SlideButton>View Project</SlideButton>
+              <Link to='projects/project1'><SlideButton>View Project</SlideButton></Link>
             </div>
           </div>
         </div>
